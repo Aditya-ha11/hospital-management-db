@@ -1,0 +1,43 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# PostgreSQL Local Binary & Cluster Data
+pgsql/
+pgdata/
+data/base/
+data/global/
+data/pg_*
+data/*.conf
+data/postmaster.*
+data/PG_VERSION
+data/postmaster.pid
+data/postmaster.opts
+
+# Keep dataset documentation and CSV samples in data/
+!data/README.md
+!data/*.csv
+
+# Raw heavy source dataset (downloaded on demand via ETL)
+data_medical_appointments.csv
+
+# Environment variables and local credentials
+.env
+.env.local
+*.env
+credentials.json
+
+# Local logs and temporary diagnostics
+*.log
+logfile.txt
+*.tmp
+
+# Browser session recording artifacts
+*.webm
+*.webp
+
+# OS specific files
+Thumbs.db
+Desktop.ini
+.DS_Store
